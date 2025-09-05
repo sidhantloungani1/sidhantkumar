@@ -1546,15 +1546,7 @@ section {
   .profile-card {
     max-width: 260px;
   }
-
-  .availability-indicator {
-    font-size: 12px;
-    padding: 5px 14px;
-  }
 }
-
-
-
 
 /* about */
 
@@ -1588,24 +1580,8 @@ section {
 .sticky-cards-container {
   width: 40%;
   min-width: 320px;
-  height: 400px;
+  height: 800px;
   position: relative;
-}
-
-.cards-wrapper {
-  position: sticky;
-  top: 100px;
-  width: 100%;
-  height: 400px;
-}
-
-/* Card Styling */
-.tilted-card {
-  position: absolute;
-  width: 280px;
-  height: 350px;
-  border-radius: 20px;
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .card-inner {
@@ -1617,6 +1593,7 @@ section {
   background-color: #fff;
   position: relative;
   border: 6px solid white;
+  
 }
 
 .card-hole {
@@ -1626,9 +1603,9 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: green;
   z-index: 2;
-  box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 3px green;
 }
 
 .about-image {
@@ -1636,32 +1613,6 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-/* Position of each card */
-.card-front {
-  top: 0;
-  left: 0;
-  z-index: 2;
-  transform: rotate(-5deg);
-}
-
-.card-back {
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  transform: rotate(3deg);
-}
-
-/* Hover effects */
-.cards-wrapper:hover .card-front {
-  transform: translateY(-20px) rotate(-8deg);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-.cards-wrapper:hover .card-back {
-  transform: translateY(10px) rotate(6deg);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 /* About Text Content */
@@ -1675,23 +1626,6 @@ section {
   font-weight: 700;
   margin-bottom: 30px;
   color: #222;
-}
-
-.location-tag {
-  display: inline-flex;
-  align-items: center;
-  background-color: #f0f0f0;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 16px;
-  margin-left: 8px;
-  position: relative;
-}
-
-.location-tag::before {
-  content: "📍";
-  margin-right: 5px;
-  font-size: 16px;
 }
 
 .subheading {
@@ -1753,31 +1687,6 @@ section {
   .sticky-cards-container, .about-text {
     width: 100%;
   }
-  
-  .cards-wrapper {
-    position: relative;
-    top: 0;
-    margin: 0 auto 50px;
-    width: 280px;
-  }
-  
-  .card-front {
-    left: 50%;
-    transform: translateX(-50%) rotate(-5deg);
-  }
-  
-  .card-back {
-    right: 50%;
-    transform: translateX(50%) rotate(3deg);
-  }
-  
-  .cards-wrapper:hover .card-front {
-    transform: translateX(-50%) translateY(-20px) rotate(-8deg);
-  }
-  
-  .cards-wrapper:hover .card-back {
-    transform: translateX(50%) translateY(10px) rotate(6deg);
-  }
 }
 
 @media (max-width: 768px) {
@@ -1793,17 +1702,7 @@ section {
     height: 300px;
   }
   
-  .cards-wrapper {
-    height: 300px;
-  }
-  
-  .tilted-card {
-    width: 220px;
-    height: 280px;
-  }
 }
-
-
 
 /* About Section Styles */
 .about-section {
@@ -1839,32 +1738,15 @@ section {
   position: relative;
 }
 
-.cards-wrapper {
-  position: sticky;
-  top: 100px;
-  width: 100%;
-  height: 500px;
-  perspective: 1000px;
-}
-
-/* Card Styling */
-.tilted-card {
-  position: absolute;
-  width: 280px;
-  height: 350px;
-  border-radius: 20px;
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
-}
-
 .card-inner {
   width: 100%;
   height: 100%;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  background-color: #FDFDFD;
   position: relative;
-  border: 6px solid white;
+  border: 6px solid #FDFDFD;
 }
 
 .card-hole {
@@ -1887,30 +1769,6 @@ section {
 }
 
 /* Position of each card - diagonal arrangement */
-.card-front {
-  top: 0;
-  left: 40px;
-  z-index: 1;
-  transform: rotate(-5deg);
-}
-
-.card-back {
-  top: 300px;
-  left: 100px;
-  z-index: 2;
-  transform: rotate(12deg);
-}
-
-/* Hover effects */
-.cards-wrapper:hover .card-front {
-  transform: translateY(-10px) rotate(-4deg);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-.cards-wrapper:hover .card-back {
-  transform: translateY(10px) rotate(4deg);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-}
 
 /* About Text Content */
 .about-text {
@@ -1923,23 +1781,6 @@ section {
   font-weight: 700;
   margin-bottom: 30px;
   color: #222;
-}
-
-.location-tag {
-  display: inline-flex;
-  align-items: center;
-  background-color: #f0f0f0;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 16px;
-  margin-left: 8px;
-  position: relative;
-}
-
-.location-tag::before {
-  content: "📍";
-  margin-right: 5px;
-  font-size: 16px;
 }
 
 .subheading {
@@ -2001,31 +1842,6 @@ section {
   .sticky-cards-container, .about-text {
     width: 100%;
   }
-  
-  .cards-wrapper {
-    position: relative;
-    top: 0;
-    margin: 0 auto 50px;
-    width: 280px;
-  }
-  
-  .card-front {
-    left: 0;
-    transform: rotate(-5deg);
-  }
-  
-  .card-back {
-    top: 300px;
-    transform: rotate(12deg);
-  }
-  
-  .cards-wrapper:hover .card-front {
-    transform: translateY(-10px) rotate(-4deg);
-  }
-  
-  .cards-wrapper:hover .card-back {
-    transform: translateY(10px) rotate(4deg);
-  }
 }
 
 @media (max-width: 768px) {
@@ -2045,24 +1861,8 @@ section {
     height: 500px;
   }
   
-  .cards-wrapper {
-    height: 500px;
-  }
-  
-  .tilted-card {
-    width: 220px;
-    height: 280px;
-  }
-  
-  .card-back {
-    top: 100px;
-    left: 40px;
-  }
 }
 
-
-
-/* button resume */
 
 /* Button styling */
 .btn-download {
