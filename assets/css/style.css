@@ -338,7 +338,7 @@ h6 {
 
 @media (max-width: 768px) {
   .container {
-    padding-top: 70px;
+    /* padding-top: 70px; */
     flex-direction: column; /* Stack items vertically on mobile */
     text-align: center; /* Center-align content */
   }
@@ -1584,18 +1584,6 @@ section {
   position: relative;
 }
 
-.card-inner {
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  position: relative;
-  border: 6px solid white;
-  
-}
-
 .card-hole {
   position: absolute;
   top: 15px;
@@ -1837,6 +1825,7 @@ section {
 @media (max-width: 992px) {
   .about-content {
     flex-direction: column;
+    gap: 80px
   }
   
   .sticky-cards-container, .about-text {
